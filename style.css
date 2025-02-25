@@ -975,15 +975,70 @@ body {
 }
 
 @media (max-width: 950px) {
+  .header{
+    padding: 2vw 8vw;
+  }
+  .header_expand h1{
+    font-size: 7.5vw;
+  }
+  .close_sec_main span{
+    font-size: 3vw;
+  }
+  .logo img{
+    width: 20vw;
+  }
+  .menu svg{
+    width: 3vw;
+  }
+  .hero_text span{
+    font-size: 8vw;
+  }
+  .hero_main{
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: 4vw;
+  }
+  .hero_main p{
+    font-size: 2vw;
+  }
+  .hero_main button{
+    font-size: 1.5vw;
+    padding: 2vw 6vw;
+  }
   .aboutUs_sec {
-    height: 50vh;
+    height: 60vh;
+  }
+  .aboutUs_content{
+    width: 50%;
   }
   .aboutUs_content p {
-    font-size: 1.1vw;
+    font-size: 1.4vw;
+  }
+  .aboutUs_heading h2{
+    font-size: 5vw;
+  }
+  .aboutUs_heading h2:nth-child(2){
+    font-size:5.5vw
   }
 
   .ourPrograms_heading p {
-    font-size: 1.2vw !important;
+    font-size: 1.3vw !important;
+    line-height: 1.5 !important;
+  }
+  .testimonial_card {
+    width: 35vw;
+  }
+  .review_sec p {
+  }
+  .aboutUs_sec {
+    height: 50vh;
+  }
+
+  .data-content {
+    font-size: 1vw;
+  }
+  .ourPrograms_heading p {
+    font-size: 1.245vw !important;
     line-height: 1.5 !important;
   }
   .testimonial_card {
@@ -992,6 +1047,12 @@ body {
   .review_sec p {
     font-size: 1.1vw;
     line-height: 1.6;
+  }
+  .sec5content p {
+    font-size: 1.2vw;
+  }
+  .sec6_heading p{
+    font-size: 1.4vw;
   }
   .footer_sec1 img {
     width: 12vw;
@@ -1015,7 +1076,9 @@ body {
   .testimonial_card {
     width: 34vw;
   }
-
+.heading{
+  bottom: 0;
+}
   .main_footer {
     flex-wrap: wrap;
     gap: 2vw;
@@ -1072,6 +1135,7 @@ body {
     /* height: 90vh; */
     background-position: 20% 0%;
   }
+  
   .hero_main {
     justify-content: end;
     align-items: start;
@@ -1081,6 +1145,7 @@ body {
     font-size: 10vw;
     text-align: start;
   }
+
   .hero_main p {
     font-size: 4vw;
     margin: 2vw 0;
@@ -1089,9 +1154,9 @@ body {
     width: 30%;
     padding: 4vw;
     font-size: 3vw;
+    font-weight: 600;
   }
-  .aboutUs_sec {
-  }
+
   .aboutUs_heading h2 {
     font-size: 8vw;
   }
