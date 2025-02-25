@@ -11,7 +11,9 @@ requestAnimationFrame(raf);
 
 gsap.registerPlugin(ScrollTrigger);
 
-
+ document.addEventListener("contextmenu", function(event) {
+    event.preventDefault();
+  });
 
 
 
