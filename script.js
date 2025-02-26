@@ -120,7 +120,7 @@ tl.from(".header", {
 });
 
 
-console.log(document.querySelector(".hero_main button"));
+
 
 
 
@@ -184,9 +184,7 @@ document.addEventListener("mousemove", (e) => {
 // Hover effect for program elements
 document.querySelectorAll(".ourPrograms_elem").forEach((elem, index) => {
   elem.addEventListener("mouseenter", () => {
-    console.log(
-      `Mouse is over: ${elem.querySelector("h1").textContent} (Index: ${index})`
-    );
+
 
     // Update last hovered index
     lastHoveredIndex = index;
@@ -200,7 +198,6 @@ document.querySelectorAll(".ourPrograms_elem").forEach((elem, index) => {
 document
   .querySelector(".ourPrograms_main")
   .addEventListener("mouseleave", () => {
-    console.log("Cursor left all elements, keeping last image");
     imageContainer.style.backgroundImage = `url(${images[lastHoveredIndex]})`;
   });
 
