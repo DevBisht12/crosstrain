@@ -43,7 +43,7 @@ body {
 }
 .header_expand {
   background-color: black;
-  height: 105vh;
+  height: 105vh !important;
   width: 100%;
   position: fixed;
   z-index: 888;
