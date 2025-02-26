@@ -47,7 +47,7 @@ const headerAnimation = () => {
       isExpanded = true;
       // Expand the header
       gsap.to(expandHeader, {
-        height: '102vh',
+        height: '105vh',
         opacity: 1,
         y: 0,
         duration: 0.2,
