@@ -11,74 +11,11 @@ requestAnimationFrame(raf);
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+
  document.addEventListener("contextmenu", function(event) {
     event.preventDefault();
   });
-
-
-
-// const headerAnimation = () => {
-//   const menu = document.querySelector('.menu');
-//   const leftMenu = document.querySelector('.headerleft');
-//   const expandHeader = document.querySelector('.header_expand');
-//   const allH1 = document.querySelectorAll('.header_expand_right h1');
-//   const closeBtn = document.querySelector('.close_sec_main');
-
-//   let isExpanded = false;
-
-//   // Handle close button click
-//   closeBtn.addEventListener('click', () => {
-//     isExpanded = false;
-
-//     // Collapse the header
-//     gsap.to(expandHeader, {
-//       height: 0,
-//       opacity: 0,
-//       y: -100,
-//       duration: 0.2,
-//       ease: 'power2.in',
-//     });
-
-//   });
-
-//   // Handle menu button click
-//   menu.addEventListener('click', () => {
-//     if (!isExpanded) {
-//       isExpanded = true;
-//       // Expand the header
-//       gsap.to(expandHeader, {
-//         height: '105vh',
-//         opacity: 1,
-//         y: 0,
-//         duration: 0.2,
-//         ease: 'power2.out',
-//       });
-//     }
-//   });
-
-//   // Add hover effects for H1 elements
-//   allH1.forEach((elem) => {
-//     elem.style.cursor='pointer'
-//     elem.addEventListener('mouseenter', () => {
-//       gsap.to(elem, {
-//         opacity: 0.5,
-//         x: 50,
-//         ease: 'power2.out',
-//       });
-//     });
-
-//     elem.addEventListener('mouseleave', () => {
-//       gsap.to(elem, {
-//         opacity: 1,
-//         x: 0,
-//         duration: 0.5,
-//         ease: 'power2.out',
-//       });
-//     });
-//   });
-// };
-
-
 
 const headerAnimation = () => {
   const menu = document.querySelector('.menu');
@@ -110,7 +47,7 @@ const headerAnimation = () => {
       isExpanded = true;
       // Expand the header
       gsap.to(expandHeader, {
-        height: '102vh',
+        height: '105vh',
         opacity: 1,
         y: 0,
         duration: 0.2,
@@ -140,7 +77,7 @@ const headerAnimation = () => {
     });
   });
 };
-
+headerAnimation()
 
 
 
@@ -183,7 +120,7 @@ tl.from(".header", {
 });
 
 
-
+// console.log(document.querySelector(".hero_main button"));
 
 
 
@@ -247,7 +184,9 @@ document.addEventListener("mousemove", (e) => {
 // Hover effect for program elements
 document.querySelectorAll(".ourPrograms_elem").forEach((elem, index) => {
   elem.addEventListener("mouseenter", () => {
-
+    // console.log(
+    //   `Mouse is over: ${elem.querySelector("h1").textContent} (Index: ${index})`
+    // );
 
     // Update last hovered index
     lastHoveredIndex = index;
@@ -261,6 +200,7 @@ document.querySelectorAll(".ourPrograms_elem").forEach((elem, index) => {
 document
   .querySelector(".ourPrograms_main")
   .addEventListener("mouseleave", () => {
+    // console.log("Cursor left all elements, keeping last image");
     imageContainer.style.backgroundImage = `url(${images[lastHoveredIndex]})`;
   });
 
@@ -462,7 +402,7 @@ gsap.fromTo(
   }
 );
 
-headerAnimation()
+
 const profileDps = document.querySelectorAll('.profile_dp');
 const colors = ["#FF5733", "#33FF57", "#3357FF", "#FF33A8", "#FF8C00", "#8A2BE2"]; // Add more colors if needed
 
